@@ -23,7 +23,7 @@ int main(void)
         printf("invalid input\n");
         return 2;
     }
-
+    
     long fac = factorial(number);
     printf("Factorial is [%li]\n",fac);
     return 0;
@@ -41,4 +41,4 @@ long factorial(long number)
         return number * factorial(number - 1);
     }
 }
-
+//baba booey
