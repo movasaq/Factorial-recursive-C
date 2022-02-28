@@ -19,6 +19,7 @@ int main(void)
 
     int fac = number;
     factorial(number,fac);
+    return 0;
 }
 
 void factorial(long number,int fac)
