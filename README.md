@@ -1,5 +1,5 @@
 # Factorial-C
-write program to calculating Factorial of number
+write a program to calculating Factorial of number
 
 just compile and Run and Enter a number 
 
