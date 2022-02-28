@@ -17,6 +17,13 @@ int main(void)
     printf("Enter Your Number:");
     scanf("%li",&number);
 
+    //check for possitive number
+    if (number == 0 || number < 0)
+    {
+        printf("invalid input\n");
+        return 2;
+    }
+
     long fac = factorial(number);
     printf("Factorial is [%li]\n",fac);
     return 0;
