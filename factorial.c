@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 //github : alisharifyy :)
 
 //function prototype
-void factorial(long number,int fac);
+long factorial(long number);
 
 int main(void)
 {
@@ -16,21 +17,21 @@ int main(void)
     printf("Enter Your Number:");
     scanf("%li",&number);
 
-    int fac = number;
-    factorial(number,fac);
+    long fac = factorial(number);
+    printf("Factorial is [%li]\n",fac);
     return 0;
 }
 
-void factorial(long number,int fac)
+long factorial(long number)
 {
     //safety check For infinity loop
-    if (fac <= 1)
+    if (number == 1)
     {
-        printf("Factorial is : %li \n",number);
-        return ;
+        return 1;
     }
-    fac -= 1;
-    number = number * fac;
-    factorial(number,fac);
+    else
+    {
+        return number * factorial(number - 1);
+    }
 }
 
