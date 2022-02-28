@@ -17,7 +17,7 @@ int main(void)
     printf("Enter Your Number:");
     scanf("%li",&number);
 
-    //check for possitive number
+    //check for positive number 
     if (number == 0 || number < 0)
     {
         printf("invalid input\n");
