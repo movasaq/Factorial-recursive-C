@@ -9,11 +9,12 @@ long factorial(long number);
 int main(void)
 {
 
-    long number = 0;
+    
     printf("\n[Github] : alisharifyy\n");
     printf("[HELLO]\nThis is factorial\n\n");
 
     //Get input From user
+    long number = 0;
     printf("Enter Your Number:");
     scanf("%li",&number);
 
