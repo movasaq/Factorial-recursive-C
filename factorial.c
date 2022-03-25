@@ -31,7 +31,7 @@ int main(void)
 
 long factorial(long number)
 {
-    //safety check For infinity loop
+    //safety check 
     if (number == 1)
     {
         return 1;
